@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-unwrangle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unwrangle MCP — cross-retailer product + reviews data (unwrangle.com)",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-f1d31f8eeeb8a93b9b523c6544b18338fb42f9c01116a14abe2bcdff57bdee5f",
+    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
   }
 }
