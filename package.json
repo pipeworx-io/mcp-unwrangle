@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-unwrangle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unwrangle MCP — cross-retailer product + reviews data (unwrangle.com)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-f1d31f8eeeb8a93b9b523c6544b18338fb42f9c01116a14abe2bcdff57bdee5f",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-685fa8750c4201da96cdf9235909bff59ecc9ca4f31660cedbbd68a3e62e3050",
+    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
   }
 }
