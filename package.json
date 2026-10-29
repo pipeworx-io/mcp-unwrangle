@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-unwrangle",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Unwrangle MCP — cross-retailer product + reviews data (unwrangle.com)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-unwrangle": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "unwrangle"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-unwrangle.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/unwrangle",
   "pipeworx": {
-    "sourceHash": "v1-685fa8750c4201da96cdf9235909bff59ecc9ca4f31660cedbbd68a3e62e3050",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "unwrangle",
+    "gatewaySlug": "unwrangle",
+    "sourceHash": "v1-f564e59732717195f9326647c098b9bcba7170e367d63bb82dfbc125aedb205f",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
